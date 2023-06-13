@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>*</pattern>
+    <template>Weatherbot couldn't find anything based on your search.please try again with appropiate input</template>
+</category>
+<category>
+ <pattern>SHOW ME A MAP OF *</pattern>
+ <template>
+ Here is a map of <formal><star/></formal>.
+ <button>
+ <text>Click here</text>
+ <url>https://www.google.co.uk/maps?q=<star/></url>
+ </button>
+ </template>
+</category>
+
+
+<category>
+ <pattern>WHAT IS THE WEATHER IN *</pattern>
+ <template>
+  I hope it's a nice day in <formal><star/></formal>.
+ <button>
+ <text>Click here for the forecast</text>
+ <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+ </button>
+ </template>
+</category>
+<category>
+ <pattern>how is weather in *</pattern>
+ <template>
+  I hope it's a beautiful day in <formal><star/></formal>.
+ <button>
+ <text>Click here for the forecast</text>
+ <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+ </button>
+ </template>
+</category>
+<category>
+ <pattern>Weather's update *</pattern>
+ <template>
+  I hope it's a nice day in <formal><star/></formal>.
+ <button>
+ <text>Click here for the forecast</text>
+ <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+ </button>
+ </template>
+</category>
+<category>
+ <pattern>how is weather today *</pattern>
+ <template>
+  I hope it's an awesome day for you.let's see the forecast <formal><star/></formal>.
+ <button>
+ <text>Click here for the forecast</text>
+ <url>https://www.weather-forecast.com/locations/<star/>/forecasts/latest</url>
+ </button>
+ </template>
+</category>
+</aiml>
